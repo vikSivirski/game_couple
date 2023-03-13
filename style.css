@@ -4,15 +4,17 @@
 
 .game__card {
     min-height: 152px;
-}
-
-.game__card {
-    border-color: var(--bs-blue);
-}
-
-.game__card-content {
+    border:3px solid var(--bs-blue);
+    border-radius: 10px;
+    width: 100%;
     font-weight: 900;
     font-size: 60px;
     line-height: 100%;
-    color: var(--bs-blue);  
+    color: var(--bs-blue); 
+    background-color: var(--bs-blue); 
+    transition: backgrond-color 0.3s ease-in-out;
+}
+
+.game__card--active {
+    background-color: white;
 }
